@@ -1,73 +1,38 @@
-nclude <stdio.h>
-
-
+#include <stdio.h>
 
 /**
+ * main - Prints numbers between 00 to 89.
  *
- *  * main - Prints numbers between 00 to 89.
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
-
 {
+	int n, j;
 
-		int i, e;
+	n = 48;
+	j = 48;
 
-
-
-			i = 48;
-
-				e = 48;
-
-
-
-					while (e < 58)
-
-							{
-
-										i = 48;
-
-												while (i < 58)
-
-															{
-
-																			if (e != i && e < i)
-
-																							{
-
-																												putchar(e);
-
-																																putchar(i);
-
-																																				if (i == 57 && e == 56)
-
-																																									{
-
-																																															break;
-
-																																																			}
-
-																																								putchar(',');
-
-																																												putchar(' ');
-
-																																															}
-
-																						i++;
-
-																								}
-
-														e++;
-
-															}
-
-						putchar('\n');
-
-							return (0);
-
+	while (j < 58)
+	{
+		n = 48;
+		while (n < 58)
+		{
+			if (j != n && j < n)
+			{
+				putchar(j);
+				putchar(n);
+				if (n == 57 && j == 56)
+				{
+					break;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+			n++;
+		}
+		j++;
+	}
+	putchar('\n');
+	return (0);
 }
